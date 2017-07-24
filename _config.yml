@@ -58,34 +58,34 @@ sidebar:
             url: /#about
             icon: question
     author_links:
-        # github:
-        #     title: global.github
-        #     url: https://github.com/
-        #     icon: github
+        github:
+            title: global.github
+            url: https://github.com/tailai
+            icon: github
         # stack_overflow:
         #     title: global.stack_overflow
         #     url: http://stackoverflow.com/users
         #     icon: stack-overflow
-        # twitter:
-        #     title: global.twitter
-        #     url: https://twitter.com/
-        #     icon: twitter
+        twitter:
+            title: global.twitter
+            url: https://twitter.com/tstailai
+            icon: twitter
         # facebook:
         #     title: global.facebook
-        #     url: https://facebook.com/
+        #     url: https://www.facebook.com/tasi1984
         #     icon: facebook
         # google_plus:
         #     title: global.google_plus
-        #     url: https://plus.google.com/
+        #     url: https://plus.google.com/104342709966150891679
         #     icon: google-plus
-        # linked_in:
-        #     title: global.linkedin
-        #     url: https://www.linkedin.com/profile/
-        #     icon: linkedin
-        # mail:
-        #     title: global.mail
-        #     url: mailto:
-        #     icon: envelope-o
+        linked_in:
+            title: global.linkedin
+            url: https://www.linkedin.com/in/tasi1984/
+            icon: linkedin
+        mail:
+            title: global.mail
+            url: 'mailto: tasi.sysu@gmail.com'
+            icon: envelope-o
     rss:
         rss:
             title: global.rss
@@ -112,18 +112,18 @@ header:
 # Author
 # Your biography and your job is editable in each languages files in `languages` folder
 author:
-    email:
-    location:
+    email: tasi.sysu@gmail.com
+    location: 帝都
     # Your profile picture located in folder `source/_images/` (development)
     # or in `source/assets/images/` (production)
     # or you can use an external url
     # Overwritten by your gravatar image if `gravatar_email` is filled
-    picture:
+    picture: avatar-360.png
     # Your Twitter username without the @. E.g : `tranquilpeak`
-    twitter:
+    twitter: tstailai
     # Your personal google plus profile id, not your blog or business page id.
     # E.g : `+JohnDoe` or `123812884128439`
-    google_plus:
+    google_plus: 104342709966150891679
     # Your businnes google plus profile id. If not provided, personal will be used instead.
     # E.g : `+Tranquilpeak` or `123812884128439`
     google_plus_business:
@@ -142,7 +142,7 @@ author:
 # large sidebar is swiped on all lower screens
 # 5: Display header bar on all screens and large sidebar is swiped on large screen
 # 6: Display header bar on all screens and medium sidebar is swiped
-sidebar_behavior: 1
+sidebar_behavior: 2
 # Hide sidebar on all article page to let article take full width to improve reading, and
 # enjoy wide images and cover images. (true: enable, false: disable)
 clear_reading: true
@@ -164,9 +164,9 @@ auto_thumbnail_image: true
 # Otherwise put your image in folder `source/_images/` (development)
 # or in `source/assets/images/` if you can't or don't want to build the theme,
 # and use relative url : `your-image.png`
-cover_image: cover.jpg
+cover_image: 'galaxy-bg.jpg'
 # Your favicon located in folder `source/_images/` (development) or in `source/assets/images/` (production)
-favicon:
+favicon: favicon.ico
 # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
 image_gallery: true
 # Pagination behavior of archive, category and tag pages (false: pagination disabled, true: pagination enabled)
@@ -209,10 +209,10 @@ sharing_options:
         icon: "fa-google-plus"
         url: "https://plus.google.com/share?url={{post.permalink}}"
     # Asian social networks
-    # weibo:
-    #     title: "Weibo"
-    #     icon: "fa-weibo"
-    #     url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
+    weibo:
+        title: "Weibo"
+        icon: "fa-weibo"
+        url: "http://service.weibo.com/share/share.php?&title={{post.permalink}}"
     # qq:
     #     title: "QQ"
     #     icon: "fa-qq"
@@ -234,3 +234,8 @@ sharing_options:
     #     title: "Odnoklassniki"
     #     icon: "fa-odnoklassniki"
     #     url: "https://connect.ok.ru/offer?url={{post.permalink}}"
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
