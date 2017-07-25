@@ -1,5 +1,6 @@
 <div class="<%= (classes ? classes.join(' ') : '') %>">
     <time itemprop="datePublished" datetime="<%= post.date.format() %>">
+      <i class="fa fa-calendar"></i>
 	<% if (post.lang) { %>
 		    <%= post.date.locale(post.lang).format(__('date_format')) %>
     	<% } else { %>

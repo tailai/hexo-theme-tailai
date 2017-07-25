@@ -1,7 +1,7 @@
 a.tag,
 .tag {
     display:        inline-block;
-    background:     #fff;
+    background:     #FFFAEF;
     width:          auto;
     height:         auto;
     border-radius:  3px;
@@ -10,6 +10,7 @@ a.tag,
     margin:         0;
     margin-right:   4px;
     margin-bottom:  7px;
+    font-weight: bold;
 }
 
 // Colors variant

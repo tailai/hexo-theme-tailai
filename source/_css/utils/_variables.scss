@@ -2,9 +2,9 @@
 // --------------------------------------------
 
 // Font families
-$open-sans:            'Open Sans';
-$open-sans-sans-serif: 'Open Sans', sans-serif;
-$merriweather-serif:   'Merriweather', serif;
+$open-sans:            'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', 'Open Sans';
+$open-sans-sans-serif: 'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+$merriweather-serif:   'Helvetica Neue', Helvetica, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Heiti SC', 'Microsoft YaHei', 'WenQuanYi Micro Hei', serif;
 $monospace:             Menlo, Consolas, monospace;
 
 $font-family-base: $open-sans-sans-serif;
@@ -49,13 +49,13 @@ $font-size: (
 $colors: (
     'success': #4dc657,
     'danger':  #f5311d,
-    'primary': #349ef3,
+    'primary': #073642,
     'purple':  #cf6ae0,
     'base':    $font-color-base,
     'warning':  #f5aa0a,
-    'light':   #9eabb3,
+    'light':   #586e75,
      // use for tag `a`
-    'link':    #349ef3
+    'link':    #839496
 );
 
 // Z-indexes
@@ -139,9 +139,9 @@ $about: (
 // Header
 $header:(
     'height':     55px,
-    'background': #fff,
-    'color':      #88909a,
-    'border':     1px solid #eef2f8
+    'background': #FFFAEF,
+    'color':      #586e75,
+    'border':     1px solid #657b83
 );
 
 // Sidebar
@@ -156,7 +156,7 @@ $sidebar: (
 // Main
 $main: (
     'padding-top':      15px,
-    'background-color': #fff
+    'background-color': #FFF9EB
 );
 
 // Components settings
