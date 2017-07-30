@@ -42,12 +42,51 @@
       var imageRatio;
       var $image;
 
+      var division = 1;
+      var imagesCount = this.$images.length;
+      if (imagesCount == 2 || imagesCount ==4) {
+        division = 2
+      } else if (imagesCount == 1) {
+        division = 1
+      } else {
+        division = 3
+      }
+
+
       this.$images.each(function() {
         $image = $(this);
         photoBoxWidth = $image.parent().parent().width();
         photoBoxHeight = $image.parent().parent().innerHeight();
         imageWidth = $image.width();
         imageHeight = $image.height();
+
+
+        photoBoxWidth = photoBoxWidth / division - 4;
+        photoBoxHeight = photoBoxWidth;
+
+        $image.parent().parent().css({
+          height: photoBoxWidth,
+          width: photoBoxWidth
+        });
+
+        // Checks if image height is larger than his box
+        if (imageHeight > imageWidth && imageHeight > photoBoxHeight) {
+          var ratio = imageWidth / photoBoxWidth;
+          // Center image in his box
+          $image.parent().css({
+            top: '-' + (((imageHeight / ratio) / 2) - (photoBoxHeight / 2)) + 'px'
+          });
+        }
+
+        // Checks if image width is larger than his box
+        if (imageWidth > imageHeight && imageWidth > photoBoxWidth) {
+          var ratio = imageHeight / photoBoxHeight
+          // Center image in his box
+          $image.parent().css({
+            width: photoBoxWidth * (imageWidth / imageHeight),
+            left: '-' + (((imageWidth / ratio) / 2) - (photoBoxWidth / 2)) + 'px'
+          });
+        }
 
         // Checks if image height is smaller than his box
         if (imageHeight < photoBoxHeight) {
@@ -81,13 +120,6 @@
           });
         }
 
-        // Checks if image height is larger than his box
-        if (imageHeight > photoBoxHeight) {
-          // Center image in his box
-          $image.parent().css({
-            top: '-' + (((imageHeight) / 2) - (photoBoxHeight / 2)) + 'px'
-          });
-        }
       });
     }
   };
