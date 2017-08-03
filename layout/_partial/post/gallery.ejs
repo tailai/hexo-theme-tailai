@@ -2,16 +2,14 @@
     ((post.gallery && post.gallery.length) || (post.photos && post.photos.length))) { %>
     <%
         var photos = post.gallery || post.photos;
-        var imageGalleryClass;
-        // change style of the gallery
-        if (photos.length > 2) {
-            imageGalleryClass = 'image-gallery-photos--thumbnail';
-        }
+        var imageGalleryClass = 'image-gallery-photos--thumbnail';
     %>
     <div class="image-gallery">
+      <% if (photos.length > 9) { %>
         <div class="image-gallery-metabar">
             <span><%= '共 ' + photos.length + ' 张照片' %></span>
         </div>
+      <% } %>
         <div class="image-gallery-photos <%= imageGalleryClass %>">
             <% photos.forEach(function(photo) { %>
             <%
