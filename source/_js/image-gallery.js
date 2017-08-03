@@ -72,7 +72,7 @@
           $image = $(this);
           imageWidth = $image.get(0).naturalWidth;
           imageHeight = $image.get(0).naturalHeight;
-          photoBoxWidth = (galleryWidth - 4 * division) / division
+          photoBoxWidth = Math.floor((galleryWidth - 4 * division) / division) - 1;
           photoBoxHeight = photoBoxWidth;
 
           $image.parent().parent().css({
