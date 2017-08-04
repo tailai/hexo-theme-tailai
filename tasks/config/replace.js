@@ -22,8 +22,8 @@ module.exports = function(grunt) {
         'source/assets/css/jquery.fancybox.css'
       ],
       replacements: [{
-        from: 'url(\'',
-        to: 'url(\'../images/'
+        from: 'url(',
+        to: 'url(../images/'
       }]
     },
     // Modify url of images and fonts in tranquilpeak.css to resolve images and fonts path.
@@ -50,4 +50,3 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-text-replace');
 };
-
